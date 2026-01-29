@@ -228,3 +228,9 @@ println("-------------------")
 if (!gitAvailable()) {
     throw GradleException("GIT system is not available. On Windows try to run Android Studio as an Administrator. Check if GIT is installed and Studio have permissions to use it")
 
+if (isMaster () && !allCommited
+( )) {
+throw new GradleException
+('There are uncommitted change
+s. Clone sources again as descr ibed in wiki and do not allow g radle update')
+}
